@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GATE Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>GATE 2025 Login</h2>
+    <input type="text" id="enrollmentId" placeholder="Enrollment ID" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="errorMsg" class="error"></p>
+    <a href="#" onclick="showOtpPopup()">Forgot Enrollment ID or Password?</a>
+  </div>
+
+  <!-- OTP Popup -->
+  <div class="otp-popup" id="otpPopup">
+    <div class="otp-box">
+      <h3>Enter OTP</h3>
+      <input type="text" id="otpInput" placeholder="Enter OTP"/>
+      <button onclick="verifyOtp()">Verify</button>
+      <p id="otpMsg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
